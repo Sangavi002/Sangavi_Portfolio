@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "private": true,
-  "homepage": "https://sangavi002.github.io/Sangavi_Portfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "vite build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
