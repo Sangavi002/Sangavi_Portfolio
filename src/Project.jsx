@@ -18,7 +18,7 @@ export function Project(){
             >
                 My Projects
             </Text>
-            <Box display="flex" flexDirection={{base:"column",md:"row"}} alignItems={{base:"center"}} p={{base:"10px",md:"30px"}} border="1px solid white" m={{base:"20px 10px",md:"20px 50px"}} bg="#ECDFCC" borderRadius="20px">
+            <Box display="flex" flexDirection={{base:"column", md:"row"}} alignItems={{base:"center"}} p={{base:"10px",md:"30px"}} border="1px solid white" m={{base:"20px 10px",md:"20px 50px"}} bg="#ECDFCC" borderRadius="20px">
                 <Box w={{base:"80%",md:"100%"}} >
                     <Img src={lululemon} alt="lululemon" w={{base:"100%", md:"100%"}} h="300px"/>
                 </Box>
