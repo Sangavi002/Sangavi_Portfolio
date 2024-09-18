@@ -72,7 +72,7 @@ const ProjectBox = ({ imageSrc, title, description, techStack, liveLink, githubL
                     ))}
                 </Box>
             </Box>
-            <Box display="flex" mt="25px" justifyContent="center" flexDirection={{ base: "column", md: "row" }} mt={{md:"10px"}} gap={{base:"10px"}}>
+            <Box display="flex" mt="25px" justifyContent="center"  alignItems="center" flexDirection={{ base: "column", md: "row" }} mt={{md:"10px"}} gap={{base:"10px"}}>
                 <Box w={{ base: "80%", md: "50%" }} textAlign="center">
                     <a href={liveLink} target="_blank" rel="noopener noreferrer">
                         <Button 
