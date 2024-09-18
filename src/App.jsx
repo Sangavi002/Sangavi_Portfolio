@@ -1,5 +1,4 @@
 import { Box, Img } from '@chakra-ui/react';
-import bg from './image/bg.jpg';
 import { Navbar } from './Navbar';
 import { Home } from './Home';
 import { About } from './About';
@@ -10,18 +9,7 @@ import { Contact } from './Contact';
 
 export function App() {
     return (
-        <Box position="relative" minHeight="100vh">
-            <Img
-                src={bg}
-                alt="Background"
-                position="absolute"
-                top="0"
-                left="0"
-                w="100%"
-                h="100%"
-                objectFit="cover"
-                zIndex="-1"
-            />
+        <Box position="relative" minHeight="100vh" bg="#FFF8E8" >
             <Navbar />
             <Box> 
                 <Home />
