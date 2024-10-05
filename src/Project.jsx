@@ -1,5 +1,7 @@
 import { Box, Img, Text, Button } from "@chakra-ui/react";
 import lululemon from "./image/lululemon.png";
+import croma from "./image/croma.png";
+import firebase from "./image/firebase.png";
 import allegro from "./image/allegro.png";
 import html1 from "./image/html1.webp";
 import css from "./image/css.png";
@@ -25,16 +27,6 @@ export function Project() {
             </Text>
 
             <ProjectBox
-                imageSrc={lululemon}
-                title="LULULEMON"
-                description="Lululemon, a premium athletic apparel retailer founded in 1998, is based in British Columbia and incorporated in Delaware."
-                view="Desktop website"
-                techStack={[html1, css, js, react, redux, chakra]}
-                liveLink="https://lululemonapp.netlify.app/"
-                githubLink="https://github.com/Sangavi002/Lululemon-clone"
-            />
-
-            <ProjectBox
                 imageSrc={allegro}
                 title="Allegro"
                 description="Allegro, established in 1999, is a leading Polish e-commerce platform and Europe's largest online shopping destination of European origin."
@@ -42,6 +34,26 @@ export function Project() {
                 techStack={[html1, css, js, react, node, express, mongo]}
                 liveLink="https://allegroclone.netlify.app/"
                 githubLink="https://github.com/Sangavi002/allegro-FE"
+            />
+
+            <ProjectBox
+                imageSrc={croma}
+                title="Croma"
+                description=" Croma is an Indian retail chain of consumer electronics and durable goods, it is a subsidiary of the Tata Digital."
+                view="Responsive"
+                techStack={[html1, css, js, react,chakra,firebase]}
+                liveLink="https://cromatech.netlify.app/"
+                githubLink="https://github.com/Sangavi002/croma"
+            />
+
+            <ProjectBox
+                imageSrc={lululemon}
+                title="LULULEMON"
+                description="Lululemon, a premium athletic apparel retailer founded in 1998, is based in British Columbia and incorporated in Delaware."
+                view="Desktop website"
+                techStack={[html1, css, js, react, redux, chakra]}
+                liveLink="https://lululemonapp.netlify.app/"
+                githubLink="https://github.com/Sangavi002/Lululemon-clone"
             />
         </Box>
     );
@@ -64,14 +76,14 @@ const ProjectBox = ({ imageSrc, title, description,view, techStack, liveLink, gi
             <Img src={imageSrc} alt={title} w="100%" h={{ base: "200px", md: "250px" }}  />
         </Box>
         <Box color="#795757" textAlign="left" w={{ base: "80%", md: "50%" }} p={{ base: "10px", md: "0px 40px" }}>
-            <Text fontSize={{ base: "24px", md: "30px" }} textAlign="center" mb={{base:"10px",}}><strong>{title}</strong></Text>
-            <Text fontSize={{ base: "18px", md: "18px" }} textAlign="center" mt="-10px">{description}</Text>
-            <Text fontSize={{ base: "15px", md: "18px" }} mt="5px"><strong>View: </strong>{view}</Text>
-            <Box display="flex" h={{ base: "100px", md: "50px" }}>
-                <Box fontSize={{ base: "15px", md: "17px" }} margin="15px 0px" w={{ base: "30%",md:"20%" }}><strong>Tech Stack:</strong></Box>
+            <Text fontSize={{ base: "24px", md: "30px",lg:"30px" }} textAlign="center" mb={{base:"10px",}}><strong>{title}</strong></Text>
+            <Text fontSize={{ base: "18px", md: "13px",lg:"18px" }} textAlign="center" mt="-10px">{description}</Text>
+            <Text fontSize={{ base: "15px", md: "13px" ,lg:"18px" }} mt="5px"><strong>View: </strong>{view}</Text>
+            <Box display="flex" h={{ base: "100px", md: "50px",lg: "50px" }}>
+                <Box fontSize={{ base: "15px",md: "13px" ,lg: "17px" }} margin="15px 0px" w={{ base: "30%",md:"20%",lg:"20%" }}><strong>Tech Stack:</strong></Box>
                 <Box display={{ base: "grid", md: "flex" }} gridTemplateColumns="repeat(4, 1fr)" h="40px" justifyContent="start" mt="10px" gap="10px">
                     {techStack.map((tech, index) => (
-                        <Img key={index} src={tech} alt={tech} h="30px" />
+                        <Img key={index} src={tech} alt={tech} h={{base:"30px",md:"25px",lg:"30px"}} />
                     ))}
                 </Box>
             </Box>
@@ -83,7 +95,8 @@ const ProjectBox = ({ imageSrc, title, description,view, techStack, liveLink, gi
                             className="button-shimmer"
                             color="#FFEAC5" 
                             _hover={{ bg: '#6C4E31' }} 
-                            width={{ base: "90%", md: "60%" }}
+                            width={{ base: "90%", md: "60%" ,lg:"60%"}}
+                            p={{md:"0px 55px"}}
                         >
                             Live Project
                         </Button>
@@ -96,7 +109,8 @@ const ProjectBox = ({ imageSrc, title, description,view, techStack, liveLink, gi
                             className="button-shimmer"
                             color="#FFEAC5" 
                             _hover={{ bg: '#6C4E31' }} 
-                            width={{ base: "90%", md: "60%" }}
+                            width={{ base: "90%", md: "60%",lg:"60%" }}
+                            p={{md:"0px 55px"}}
                         >
                             GitHub Repo
                         </Button>

@@ -16,7 +16,7 @@ export function Contact() {
             >
                Contact Me
             </Text>
-            <Box display="flex" flexDirection="column" ml={{base:"auto", md:"auto"}} mr={{base:"auto", md:"auto"}} w={{base:"90%", md:"30%"}} gap="10px" bg="#ECDFCC" borderRadius="20px" color="#795757"  p="20px 30px" mt="30px" fontWeight="500">
+            <Box display="flex" flexDirection="column" ml={{base:"auto", md:"auto"}} mr={{base:"auto", md:"auto"}} w={{base:"90%", md:"40%",lg:"30%"}} gap="10px" bg="#ECDFCC" borderRadius="20px" color="#795757"  p="20px 30px" mt="30px" fontWeight="500">
                 <Box display="flex"  >
                     <Img src={git1} alt="github" w="10%" h="30px"/>
                     <a href="https://github.com/Sangavi002" target="_blank" style={{padding:"0px 20px"}}>Sangavi002</a>

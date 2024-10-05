@@ -10,6 +10,7 @@ import github from "./image/github.png";
 import redux from "./image/redux.png";
 import chakra from "./image/chakra.jpeg";
 import vs from "./image/vs.jpeg"
+import firebase from "./image/firebase.png";
 
 export function Skills() {
     return (
@@ -27,7 +28,7 @@ export function Skills() {
                 gridTemplateColumns={{ base: "repeat(2,20%)",sm:"repeat(3,25%)",md:"repeat(3,25%)", lg: "repeat(4,13%)" }}
                 justifyContent="center"
                 gap={{base:"40px 60px", sm:"40px 10px",md:"40px 20px", lg:"40px 30px"}}
-                p={{ base: "20px", md: "20px 200px" }}
+                p={{ base: "20px", md: "20px 120px",lg: "20px 180px" }}
             >
                 <SkillIcon src={html} alt="HTML5" label="HTML5" />
                 <SkillIcon src={css} alt="CSS3" label="CSS3" />
@@ -40,6 +41,7 @@ export function Skills() {
                 <SkillIcon src={github} alt="GitHub" label="GitHub" />
                 <SkillIcon src={chakra} alt="Chakra UI" label="Chakra UI" />
                 <SkillIcon src={vs} alt="VS Code" label="VS Code" />
+                <SkillIcon src={firebase} alt="Firebase" label="Firebase" />
             </Box>
             <style jsx>{`
                 .rotate {
