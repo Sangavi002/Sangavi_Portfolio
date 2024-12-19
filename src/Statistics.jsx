@@ -23,7 +23,7 @@ export function Statistics () {
                     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sangavi002&layout=compact&theme=white" alt="" width="100%"/>
                 </Box>
                 <Box w={{base:"80%",md:"40%"}}>
-                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Sangavi002&theme=white&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D" alt="" width="100%" h/>
+                    <img src="https://streak-stats.demolab.com/?user=sangavi002" alt="stat" width="100%" />
                 </Box>
             </Box>
         </Box>
